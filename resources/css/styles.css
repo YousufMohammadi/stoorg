@@ -181,6 +181,7 @@ input[type=search]{
     flex-wrap: wrap;
     padding: 2rem 12rem ;
     align-items: center;
+    position: relative;
 
 }
 .section__two--text{
@@ -189,6 +190,20 @@ input[type=search]{
     flex-wrap: wrap;
     width: 30%;
     margin-right: 10rem;
+}
+.section__two--offer{
+    background-color: #0fbd66;
+    border-radius: 50%;
+    text-align: center;
+    display: inline;
+    padding:5.5rem 3rem;
+    font-size: 1.8rem;
+    color: white;
+    text-transform: capitalize;
+    position: absolute;
+    left: 30%;
+    /* top: 10%; */
+    transform: translate(50%,30%);
 }
 .text-break{
     word-break: break-all;
@@ -214,24 +229,33 @@ input[type=search]{
 .sectionThree__text , .sectionFour__text{
     text-align: center !important;
     padding-bottom: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-size: 10rem !important;
 }
 .card__container{
-    padding: 2rem;
+    padding:2rem 2rem 0;
     width: 28rem;
-    height: auto;
+    height: 40rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    border: 2px solid #9fb9ac;
+    /* border: 2px solid #9fb9ac; */
     border-radius: 1rem;
     margin-bottom: 1rem;
     background-color: white;
+    /* background-color: red; */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
     /* justify-content: center; */
     /* align-items: center; */
     /* width: 25%; */
+}
+.card__container img{
+    width: 100%;
+    height: 70%;
+}
+.card__container .sectionFour__img{
+    height: 50% !important;
 }
 .card__link{
     text-align: center;
@@ -243,13 +267,38 @@ input[type=search]{
     flex-wrap: wrap;
 
 }
+.card__date--link{
+    text-align: center;
+    background-color: #0fbd66;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50;
+    left: 50;
+    transform: translate(50%,460%);
+    border-radius: 1.5rem;
+}
+.simple__link{
+    color: #0fbd66;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    text-align: right;
+    margin-top: 2rem 0;
+}
 .cost-text{
     padding-bottom: 2rem ;
+}
+.card__text{
+    margin-top: 2rem;
+    color: black;
+    margin-bottom: 0.5rem;
 }
 /* _________________ */
 #section__four{
     background-color: #e9eceb;
     margin-top: 6rem;
+    padding-bottom: 2rem;
 
 }
 /* __________________________________ */
@@ -267,7 +316,7 @@ input[type=search]{
 }
 .contact__text{
     float: left;
-    width: 40%;
+    width: 30%;
     color: white;
 }
 .input__container{

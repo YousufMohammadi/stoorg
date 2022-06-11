@@ -37,15 +37,37 @@ body{
     div.section__two{
         display: flex;
         flex-direction: column;
-        
+    }
+    div.section__two img{
+        transform: translateX(-40%);   
+    }
+    div.section__two--offer{
+        border-radius: 50%;
+        text-align: center;
+        display: inline;
+        padding:3.5rem 1.5rem;
+        font-size: 1.5rem;
+        position: absolute;
+        left: 20%;
+        transform: translate(50%,30%);
     }
     div.section__two--img,div.section__two--text{
         width: 100%;
         
         
     }
-    
-    
+    div.card__sectionOne, div.card__sectionTwo{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    span.big-text.sectionThree__text , span.big-text.sectionFour__text{
+        font-size: 4rem ;
+    }
+    footer#footer{
+        background-color: black;
+    }
 }
 /* ______________________________________________________________________ */
 /* ______________________________________________________________________ */
@@ -62,7 +84,7 @@ a{
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 2rem 6rem ;
-    box-shadow: 2px 2px 2px #9fb9ac;
+    /* box-shadow: 2px 2px 2px #9fb9ac; */
 
 }
 #footer{
@@ -238,7 +260,7 @@ input[type=search]{
     color: white;
     text-transform: capitalize;
     position: absolute;
-    left: 30%;
+    left: 50%;
     /* top: 10%; */
     transform: translate(50%,30%);
 }
@@ -249,6 +271,8 @@ input[type=search]{
 .section__two--img{
     width: 50%;
     padding-left: 3rem;
+    position: relative;
+    
 }
 .section__two--img img{
     width: 100%;
@@ -262,12 +286,13 @@ input[type=search]{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    text-align: center;
+    
 }
 .sectionThree__text , .sectionFour__text{
-    text-align: center !important;
     padding-bottom: 1rem;
     margin-bottom: 2rem;
-    font-size: 10rem !important;
+    font-size: 10rem;
 }
 .card__container{
     padding:2rem 2rem 0;
@@ -297,11 +322,13 @@ input[type=search]{
 .card__link{
     text-align: center;
 }
-.card__sectionOne ,.card__sectionTwo{
+.card__sectionOne {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin: 0 10rem;
 
 }
 .card__date--link{

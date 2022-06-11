@@ -65,9 +65,35 @@ body{
     span.big-text.sectionThree__text , span.big-text.sectionFour__text{
         font-size: 4rem ;
     }
+    
+div.contact__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+div.contact__text{
+    width: 100%;
+    font-size: 3rem;
+}
+div.input__container{
+    width: 100%;
+    
+}
+input.email{
+    padding: 1.5rem 1rem;
+    width: 100%;
+}
+a.subscribe__link{
+    margin-right: auto;
+}
     footer#footer{
         background-color: black;
     }
+}
+@media only screen and (min-width:600px) and (max-width:768px){
+    
+    
 }
 /* ______________________________________________________________________ */
 /* ______________________________________________________________________ */

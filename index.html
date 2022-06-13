@@ -14,8 +14,9 @@
             <img src="resources/css/img/logo.jpg" alt="logo" class="logo">
             <span class="logo__name">stoorg</span>
         </div>
-        <div class="header-link__container">
-            
+
+        <div class="header-link__container"> 
+          <div class="navbar__container">           
             <a href="index.html">home</a>
             <a href="#section__two">about</a>
             <a href="#section__three">shop</a>
@@ -27,8 +28,15 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
                 </a>
             </div>
-
+          </div>
+            
+            <div class="mobile__navbar">
+                <a href="javascript:void(0);" class="navbar__icon" onclick="showNavbar()">
+                <i class="fa-solid fa-bars"></i></a>
+            </div>
+        
         </div>
+
     </header>
     
     <section id="section__one">
@@ -180,5 +188,16 @@
         <span class="footer__text">&copy;copy right by yousuf mohammadi allright reserved 2022 </span>
 
     </footer>
+    <script>
+        function showNavbar() {
+          var x = document.getElementsByClassName("navbar__container");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>        
+
 </body>
 </html

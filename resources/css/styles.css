@@ -46,6 +46,10 @@ body{
         flex-direction: column;
         justify-content: center;
     }
+    span.small-text{
+        font-size: 1rem;
+        word-spacing:normal;
+    }
     div.section__one--text, div.section__one--img{
         width: 100%;
         margin-bottom: 2rem;
@@ -98,8 +102,10 @@ div.input__container{
 }
 input.email{
     padding: 1.5rem 1rem;
+    font-size: 1.5rem;
     width: 100%;
 }
+
 a.subscribe__link{
     margin-right: auto;
 }
@@ -144,8 +150,137 @@ a.subscribe__link{
         top: 0; */
         padding:  1rem;
     }
+    span.small-text{
+        font-size: 1.2rem;
+        word-spacing:normal;
+    }
+    div.section__two{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    div.section__two img{
+        transform: translate(-20%);  
+        width: 60%; 
+    }
+    div.section__two--offer{
+        border-radius: 50%;
+        text-align: center;
+        display: inline;
+        padding:3.5rem 1.5rem;
+        font-size: 1.5rem;
+        position: absolute;
+        left: 30%;
+        transform: translate(50%,5%);
+    }
+    div.section__two--img,div.section__two--text{
+        width: 100%;
+    }
+    div.card__sectionOne {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 8rem;
+    }
+    div.card__sectionTwo{
+        display: flex;
+        flex-direction: column ;
+        align-items: center;
+    }
+    div.card__sectionTwo div.card__container{
+        padding:4rem 4rem 0;
+        width: 50rem;
+        height: 50rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    a.card__date--link{
+        transform: translate(120%,70%);
+    }
+    .contact__container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* text-align: center; */
+        margin: 6rem 12rem;
+        padding: 1rem 2rem;
+        background-color: #0fbd66;
+        border-radius: 1rem;
+    
+    }
+    .input__container{
+        float: right;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+    input.email{
+        font-size: 1.5rem;
+    }
+    a.subscribe__link{
+        padding: 0.4rem 0.6rem;
+        width: 8rem;
+        height: 3rem;
+        font-size: 1.5rem;
+    }
+    footer#footer{
+        background-color: black;
+    }
+    
+    
     
 }
+@media only screen and (min-width:768px) and (max-width:992px){
+    span.small-text{
+        font-size: 1.2rem;
+        word-spacing:normal;
+    }
+    div.section__two img{
+        transform: translate(-20%);  
+        width: 80%; 
+    }
+    div.section__two--offer{
+        border-radius: 50%;
+        text-align: center;
+        display: inline;
+        padding:3.5rem 1.5rem;
+        font-size: 1.5rem;
+        position: absolute;
+        left: 30%;
+        transform: translate(50%,5%);
+    }
+    div.card__sectionOne {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        /* margin: 2rem 4rem; */
+    }
+    div.card__container{
+        width: 25rem;
+    }
+    a.section__one--link, 
+    a.section__two--link{
+        font-size: 1rem;
+
+    }
+    a.card__date--link{
+    font-size: 1.2rem;
+    transform: translate(50%,500%);
+    }
+    input.email{
+        font-size: 1.6rem;
+    }
+}
+/* @media only screen and (min-width:992px) and (max-width:1200px) {
+    
+} */
 /* ______________________________________________________________________ */
 /* ______________________________________________________________________ */
 a{

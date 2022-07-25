@@ -10,7 +10,7 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     /* padding: 2%; */
 }
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:599px) {
     div.navbar__container{
         display: none;
         margin: auto;
@@ -154,6 +154,9 @@ a.subscribe__link{
         font-size: 1.2rem;
         word-spacing:normal;
     }
+    /* span.big-text{
+        font-size: 2rem;
+    } */
     div.section__two{
         display: flex;
         flex-direction: column;
@@ -182,14 +185,14 @@ a.subscribe__link{
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin: 0 8rem;
+        padding: 0 8rem;
     }
-    div.card__sectionTwo{
+    /* div.card__sectionOne div.card__sectionTwo{
         display: flex;
         flex-direction: column ;
         align-items: center;
-    }
-    div.card__sectionTwo div.card__container{
+    } */
+    /* div.card__sectionTwo div.card__container{
         padding:4rem 4rem 0;
         width: 50rem;
         height: 50rem;
@@ -197,10 +200,10 @@ a.subscribe__link{
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: space-evenly;
-    }
-    a.card__date--link{
+    } */
+    /* a.card__date--link{
         transform: translate(120%,70%);
-    }
+    } */
     .contact__container{
         display: flex;
         flex-direction: row;
@@ -510,7 +513,9 @@ input[type=search]{
     flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
-    
+    /* width: 80%; */
+    padding: 0 8%;
+    margin: 0 auto;
 }
 .sectionThree__text , .sectionFour__text{
     padding-bottom: 1rem;
@@ -518,20 +523,20 @@ input[type=search]{
     font-size: 10rem;
 }
 .card__container{
-    padding:2rem 2rem 0;
-    width: 28rem;
-    height: 40rem;
+    padding:2rem 2rem ;
+    width: 30rem;
+    height: 45rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    /* border: 2px solid #9fb9ac; */
+    /* border: 5px solid #bcccc4; */
     border-radius: 1rem;
     margin-bottom: 1rem;
     background-color: white;
     /* background-color: red; */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: relative;
-    /* justify-content: center; */
+    justify-content: space-evenly;
     /* align-items: center; */
     /* width: 25%; */
 }
@@ -551,7 +556,7 @@ input[type=search]{
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: 0 10rem;
+    /* padding: 0 3rem; */
 
 }
 .card__date--link{
@@ -563,7 +568,7 @@ input[type=search]{
     position: absolute;
     top: 50;
     left: 50;
-    transform: translate(50%,460%);
+    transform: translate(60%,40%);
     border-radius: 1.5rem;
 }
 .simple__link{

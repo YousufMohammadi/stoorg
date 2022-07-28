@@ -11,6 +11,42 @@ body{
     /* padding: 2%; */
 }
 @media only screen and (max-width:400px) {
+    header#header{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    div.navbar__container{
+        width: 70%;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        background-color: #0fbd66;
+        position: absolute;
+        transform: translate(-74%,50%);
+        padding: 1rem;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+    div.navbar__container a{
+        color: white;
+    }
+    div.navbar__container a:last-child{
+        background-color: black;
+        padding: 0.5rem;
+        border-radius: 5px;
+    }
+    
+    div.mobile__navbar{
+        display: flex;
+        justify-content:space-evenly;
+        text-align: center;
+        color: white;
+        padding:  1rem;
+    }
 
     section#section__one{
         display: flex;
@@ -117,36 +153,42 @@ body{
     }
 
 @media only screen and (max-width:600px) {
-    div.navbar__container{
-        display: none;
-        margin: auto;
+    header#header{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
     }
+    div.navbar__container{
+        width: 90%;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        background-color: #0fbd66;
+        position: absolute;
+        transform: translate(-75%,14%);
+        padding: 1rem;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+    div.navbar__container a{
+        color: white;
+    }
+    div.navbar__container a:last-child{
+        background-color: black;
+        padding: 0.5rem;
+        border-radius: 5px;
+    }
+    
     div.mobile__navbar{
         display: flex;
         justify-content:space-evenly;
         text-align: center;
         color: white;
-        /* position: absolute; */
-        /* margin: 1rem 6rem ; */
-        /* right: 0;
-        top: 0; */
         padding:  1rem;
     }
-    header#header{
-        display: flex;
-        /* flex-direction: column; */
-        /* justify-content: center; */
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-    /* header .header-link__container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-wrap: wrap;
-        text-align: center;
-    } */
     section#section__one{
         display: flex;
         flex-direction: column;
@@ -221,40 +263,40 @@ a.subscribe__link{
 }
 
 @media only screen and (min-width:601px) and (max-width:768px){
-    /* div.navbar__container{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    } */
     header#header{
         display: flex;
-        /* flex-direction: column; */
-        /* justify-content: center; */
         justify-content: space-between;
         flex-wrap: wrap;
         align-items: center;
-        /* overflow: hidden; */
     }
-    /* div.navbar__container{
-        display: none;
-    } */
     div.navbar__container{
+        width: 80%;
         display: none;
-        /* flex-direction: row;
-        justify-content: space-around;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
         flex-wrap: wrap;
-        position: relative; */
+        background-color: #0fbd66;
+        position: absolute;
+        transform: translate(-90%,14%);
+        padding: 1rem;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
     }
+    div.navbar__container a{
+        color: white;
+    }
+    div.navbar__container a:last-child{
+        background-color: black;
+        padding: 0.5rem;
+        border-radius: 5px;
+    }
+    
     div.mobile__navbar{
         display: flex;
         justify-content:space-evenly;
         text-align: center;
         color: white;
-        /* position: absolute; */
-        /* margin: 1rem 6rem ; */
-        /* right: 0;
-        top: 0; */
         padding:  1rem;
     }
     span.small-text{
@@ -411,9 +453,6 @@ a.subscribe__link{
         font-size: 1.6rem;
     }
 }
-/* @media only screen and (min-width:992px) and (max-width:1200px) {
-    
-} */
 /* ______________________________________________________________________ */
 /* ______________________________________________________________________ */
 a{

@@ -16,7 +16,11 @@
         </div>
 
         <div class="header-link__container"> 
-          <div class="navbar__container">           
+            <div class="mobile__navbar">
+                <a href="javascript:void(0);" class="navbar__icon" onclick="showNavbar()">
+                <i class="fa-solid fa-bars"></i></a>
+            </div>
+          <div class="navbar__container" id="navbar__container">           
             <a href="index.html">home</a>
             <a href="#section__two">about</a>
             <a href="#section__three">shop</a>
@@ -30,10 +34,7 @@
             </div>
           </div>
             
-            <div class="mobile__navbar">
-                <a href="javascript:void(0);" class="navbar__icon" onclick="showNavbar()">
-                <i class="fa-solid fa-bars"></i></a>
-            </div>
+            
         
         </div>
 
@@ -186,11 +187,11 @@
     </footer>
     <script>
         function showNavbar() {
-          var x = document.getElementsByClassName("navbar__container");
-          if (x.style.display === "block") {
+          var x = document.getElementById('navbar__container');
+          if (x.style.display === "flex") {
             x.style.display = "none";
           } else {
-            x.style.display = "block";
+            x.style.display = "flex";
           }
         }
     </script>        

@@ -11,6 +11,9 @@ body{
     /* padding: 2%; */
 }
 @media only screen and (max-width:400px) {
+    div.header-link__container a:first-child{
+        color: white;
+    }
     header#header{
         display: flex;
         justify-content: space-between;
@@ -18,7 +21,7 @@ body{
         align-items: center;
     }
     div.navbar__container{
-        width: 70%;
+        width: 50%;
         display: none;
         flex-direction: column;
         justify-content: center;
@@ -26,7 +29,7 @@ body{
         flex-wrap: wrap;
         background-color: #0fbd66;
         position: absolute;
-        transform: translate(-74%,50%);
+        transform: translate(-100%,14%);
         padding: 1rem;
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
@@ -153,6 +156,9 @@ body{
     }
 
 @media only screen and (max-width:600px) {
+    div.header-link__container a:first-child{
+        color: white;
+    }
     header#header{
         display: flex;
         justify-content: space-between;
@@ -160,7 +166,7 @@ body{
         align-items: center;
     }
     div.navbar__container{
-        width: 90%;
+        width: 50%;
         display: none;
         flex-direction: column;
         justify-content: center;
@@ -168,7 +174,7 @@ body{
         flex-wrap: wrap;
         background-color: #0fbd66;
         position: absolute;
-        transform: translate(-75%,14%);
+        transform: translate(-100%,14%);
         padding: 1rem;
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
@@ -263,6 +269,9 @@ a.subscribe__link{
 }
 
 @media only screen and (min-width:601px) and (max-width:768px){
+    div.header-link__container a:first-child{
+        color: white;
+    }
     header#header{
         display: flex;
         justify-content: space-between;
@@ -270,7 +279,7 @@ a.subscribe__link{
         align-items: center;
     }
     div.navbar__container{
-        width: 80%;
+        width: 50%;
         display: none;
         flex-direction: column;
         justify-content: center;
@@ -278,7 +287,7 @@ a.subscribe__link{
         flex-wrap: wrap;
         background-color: #0fbd66;
         position: absolute;
-        transform: translate(-90%,14%);
+        transform: translate(-110%,14%);
         padding: 1rem;
         border-bottom-left-radius: 25px;
         border-bottom-right-radius: 25px;
@@ -410,6 +419,9 @@ a.subscribe__link{
 }
 
 @media only screen and (min-width:768px) and (max-width:992px){
+    div.header-link__container a:first-child{
+        color: white;
+    }
     span.small-text{
         font-size: 1.2rem;
         word-spacing:normal;
